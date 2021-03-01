@@ -1,0 +1,28 @@
+{
+  "name": "devsignia",
+  "version": "1.0",
+  "description": "Emblems on your websites to differentiate between prod and dev",
+  "manifest_version": 2,
+  "permissions": [
+    "activeTab",
+    "declarativeContent",
+    "storage"
+  ],
+  "background": {
+    "scripts": [
+      "lib/background.js"
+    ],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "lib/content.js"
+      ]
+    }
+  ]
+}
