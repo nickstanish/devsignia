@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/views/common/page.css">
+    <link rel="stylesheet" href="/views/common/ui.css">
+    <link rel="stylesheet" href="/views/options.css">
+    <title>Devsignia</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Devsignia</h1>
+      <h2>New Emblem</h2>
+      <noscript>This page requires JavaScript</noscript>
+      <form id="new-emblem-form">
+        <div class="field-group">
+          <label>
+            Name
+            <input type="text" name="name">
+          </label>
+        </div>
+        <div class="field-group">
+          <label>
+            Message
+            <input type="text" name="message">
+          </label>
+        </div>
+        <div class="field-group">
+          <label>
+            Background Color
+            <input type="text" name="backgroundColor">
+          </label>
+        </div>
+        <div class="field-group">
+          <label>
+            Color
+            <input type="text" name="color">
+          </label>
+        </div>
+        <div class="field-group">
+          <label>
+            Matchers
+            <textarea type="text" name="matchers"></textarea>
+          </label>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+      <script type="module" src="/views/emblems/new.js"></script>
+  </body>
+
+</html>

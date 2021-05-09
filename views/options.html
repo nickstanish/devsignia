@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/views/common/page.css">
+    <link rel="stylesheet" href="/views/common/ui.css">
+    <link rel="stylesheet" href="/views/options.css">
+    <title>Devsignia</title>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Devsignia</h1>
+      <h2>Options</h2>
+      <noscript>This page requires JavaScript</noscript>
+      <div class="EmblemTable">
+        <div class="EmblemTable-row EmblemTable-header-row">
+          <div class="EmblemTable-header-cell EmblemTable-cell">Name</div>
+          <div class="EmblemTable-header-cell EmblemTable-cell">Message</div>
+          <div class="EmblemTable-header-cell EmblemTable-cell">Enabled</div>
+          <div class="EmblemTable-header-cell EmblemTable-cell">Actions</div>
+        </div>
+        <div id="view-emblem-list"></div>
+      </div>
+      <a href="/views/emblems/new.html">New Emblem</button>
+    </div>
+    <script type="module" src="/views/options.js"></script>
+    <template id="template-view-emblem">
+      <div data-attr="[data-id]:getId" class="EmblemTable-row">
+        <div class="EmblemTable-cell" data-text="getName"></div>
+        <div class="EmblemTable-cell" data-text="getMessage"></div>
+        <div class="EmblemTable-cell" data-text="getEnabled"></div>
+        <div class="EmblemTable-cell">
+          <button class="LinkButton" type="button">Edit</button>
+          <button class="LinkButton" type="button">Delete</button>
+        </div>
+      </div>
+    </template>
+    <template id="template-edit-emblem">
+    </template>
+  </body>
+</html>

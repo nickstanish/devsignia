@@ -1,0 +1,30 @@
+.EmblemTable {
+  margin: 0 0 1em;
+}
+
+.EmblemTable-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.4em 0.2em;
+  border-bottom: 1px dotted #a17dbf;
+}
+
+.EmblemTable-cell {
+  flex: 1 1 0;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.EmblemTable-cell:last-of-type {
+  text-align: right;
+}
+
+.EmblemTable-header-row {
+  font-weight: 600;
+}
+
+.EmblemTable-header-cell {
+}
