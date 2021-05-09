@@ -1,0 +1,12 @@
+a,
+a:visited,
+a:active {
+  font-weight: 600;
+  color: #4d4d4d;
+  transition: all 0.12s ease-in-out;
+}
+
+a:hover,
+a:focus {
+  color: #289ccb;
+}
